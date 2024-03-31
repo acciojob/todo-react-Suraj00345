@@ -41,8 +41,10 @@ const App = () => {
         {tasks.map((task) => {
           return (
             <ul>
+              <li>
               <span style={{ marginRight: "100px" }}>{task}</span>
               <button onClick={() => removeTask(task)}>Delete</button>
+              </li>
             </ul>
           );
         })}
